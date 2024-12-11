@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ProjectDetail from './components/ProjectDetail';
 import './App.css';
 import Navbar from './components/Navbar';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiUnity, SiCplusplus } from 'react-icons/si'; 
 
 function App() {
   return (
@@ -65,27 +66,22 @@ function App() {
                 <section className="skills">
                   <h2>기술 스택</h2>
                   <div className="skills-container">
-                    {/* 기술 스택 아이콘이나 리스트가 들어갈 예정 */}
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                    <div className="skill-item">
+                      <SiUnity className="skill-icon" />
+                      <span>Unity</span>
+                    </div>
+                    <div className="skill-item">
+                      <FaNodeJs className="skill-icon" />
+                      <span>Node.js</span>
+                    </div>
+                    <div className="skill-item">
+                      <FaReact className="skill-icon" />
+                      <span>React</span>
+                    </div>
+                    <div className="skill-item">
+                      <SiCplusplus className="skill-icon" />
+                      <span>C++</span>
+                    </div>
                   </div>
                 </section>
 

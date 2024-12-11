@@ -139,6 +139,32 @@ h2::after {
   margin-right: 10px;
 }
 
+/* 기술 스택 스타일 */
+.skills-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
 /* 프로젝트 섹션 */
 .project-grid {
   display: grid;
