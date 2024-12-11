@@ -1,13 +1,17 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ProjectDetail from './components/ProjectDetail';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/" element={
+        {/* 네비게이션 바 */}
+        <Navbar />
+        <div className="content" style={{ paddingTop: '64px' }}>
+          <Routes>
+            <Route path="/" element={
             <>
               <header className="App-header">
                 <h1>김태현의 포트폴리오</h1>
@@ -19,9 +23,41 @@ function App() {
               <main>
                 <section className="about">
                   <h2>About Me</h2>
-                  <p>
-                    안녕하세요! 창의적인 웹 솔루션을 만드는 것을 좋아하는 개발자입니다.
-                  </p>
+                  <div className="about-gird">
+                    <div>이름</div>
+                    <div>생년월일</div>
+                    <div>연락처</div>
+                    <div>이메일</div>
+                    <div>학력</div>
+                    <div>깃허브</div>
+                  </div>
+                </section>
+                
+                <section className="skills">
+                  <h2>기술 스택</h2>
+                  <div className="skills-container">
+                    {/* 기술 스택 아이콘이나 리스트가 들어갈 예정 */}
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                  </div>
                 </section>
 
                 <section className="projects">
@@ -59,18 +95,12 @@ function App() {
                     </div>
                   </div>
                 </section>
-
-                <section className="skills">
-                  <h2>기술 스택</h2>
-                  <div className="skills-container">
-                    {/* 기술 스택 아이콘이나 리스트가 들어갈 예정 */}
-                  </div>
-                </section>
               </main>
             </>
           } />
           <Route path="/project/:id" element={<ProjectDetail />} />
-        </Routes>
+          </Routes>
+        </div>
 
         <footer>
           <p>연락처: act0097@gmail.com</p>
