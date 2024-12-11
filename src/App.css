@@ -94,9 +94,49 @@ h2::after {
 
 /*about 섹션*/
 .about-grid {
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열로 구성 */
   gap: 20px;
+  padding: 10px;
+}
+
+.about-item {
+  display: flex;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-label {
+  font-weight: 1000;
+  color: #4a5568;
+  min-width: 80px;
+  margin-right: 15px;
+}
+
+.about-content {
+  color: #2d3748;
+  flex: 1;
+}
+
+/* 깃허브 링크 스타일 */
+.github-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2d3748;
+  transition: opacity 0.3s ease;
+}
+
+.github-link:hover {
+  opacity: 0.8;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 /* 프로젝트 섹션 */

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ProjectDetail from './components/ProjectDetail';
 import './App.css';
 import Navbar from './components/Navbar';
+import { FaGithub } from 'react-icons/fa';
 
 function App() {
   return (
@@ -23,13 +24,41 @@ function App() {
               <main>
                 <section className="about">
                   <h2>About Me</h2>
-                  <div className="about-gird">
-                    <div>이름</div>
-                    <div>생년월일</div>
-                    <div>연락처</div>
-                    <div>이메일</div>
-                    <div>학력</div>
-                    <div>깃허브</div>
+                  <div className="about-grid">
+                  <div className="about-item">
+                    <div className="about-label">이름</div>
+                    <div className="about-content">김태현</div>
+                  </div>
+                  <div className="about-item">
+                    <div className="about-label">생년월일</div>
+                    <div className="about-content">2002.09.12</div>
+                  </div>
+                  <div className="about-item">
+                    <div className="about-label">연락처</div>
+                    <div className="about-content">010-2167-5323</div>
+                  </div>
+                  <div className="about-item">
+                    <div className="about-label">이메일</div>
+                    <div className="about-content">act0097@gmail.com</div>
+                  </div>
+                  <div className="about-item">
+                    <div className="about-label">학력</div>
+                    <div className="about-content">인하대학교 컴퓨터공학과</div>
+                  </div>
+                  <div className="about-item">
+                    <div className="about-label">깃허브</div>
+                    <div className="about-content">
+                      <a 
+                       href="https://github.com/hamzzi0097" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                       className="github-link"
+                      >
+                       <FaGithub className="github-icon" />
+                       github.com/hamzzi0097
+                      </a>
+                    </div>
+                  </div>
                   </div>
                 </section>
                 
